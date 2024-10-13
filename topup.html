@@ -22,34 +22,35 @@
         <!-- Transfer Dana Section -->
         <div class="flex items-center justify-between p-4 bg-purple-700 text-white">
             <i class="fas fa-money-transfer"></i>
-            <h1 class="text-xl font-bold">Transfer Dana</h1>
-            <i class="fas fa-bell"></i>
+            <h1 class="text-xl font-bold">Top Up </h1>
+            <i class="fas fa-belsl"></i>
         </div>
-
-        <!-- Logos Section -->
+        
+        <!-- Transfer Form -->
         <div class="p-4">
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div class="flex flex-col items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/ShopeePay_logo.svg/1200px-ShopeePay_logo.svg.png" alt="ShopeePay" class="h-16 w-16">
-                    <div class="text-sm mt-2">ShopeePay</div>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="account-number">Nomor Rekening</label>
+                    <input type="text" id="account-number" name="account-number" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Masukkan nomor rekening" required>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Logo_Bank_BRI.svg/1280px-Logo_Bank_BRI.svg.png" alt="Bank" class="h-16 w-16">
-                    <div class="text-sm mt-2">Bank</div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="account-type">Tipe Akun</label>
+                    <select id="account-type" name="account-type" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+                        <option value="">Pilih tipe akun</option>
+                        <option value="savings">Tabungan</option>
+                        <option value="checking">Rekening Giro</option>
+                        <option value="business">Rekening Bisnis</option>
+                    </select>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_Virtual_Account.png/640px-Logo_Virtual_Account.png" alt="Virtual Account" class="h-16 w-16">
-                    <div class="text-sm mt-2">Virtual Account</div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="currency-code">Kode Mata Uang</label>
+                    <input type="text" id="currency-code" name="currency-code" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Masukkan kode mata uang (contoh: IDR)" required>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Minta_Dana_Logo.png/640px-Minta_Dana_Logo.png" alt="Minta Dana" class="h-16 w-16">
-                    <div class="text-sm mt-2">Minta Dana</div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="available-balance">Total Saldo Tersedia</label>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Scan_Transfer_Logo.png/640px-Scan_Transfer_Logo.png" alt="Scan untuk Transfer" class="h-16 w-16">
-                    <div class="text-sm mt-2">Scan untuk Transfer</div>
-                </div>
-            </div>
+                <button type="submit" class="w-full bg-purple-700 text-white py-2 rounded-lg hover:bg-purple-600">Kirim</button>
+            </form>
         </div>
 
         <!-- Bottom Navigation -->
