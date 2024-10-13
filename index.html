@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>FNBC Dashboard</title>
+    <title>Ebanking Kelompok 2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,17 +15,16 @@
         <!-- Header -->
         <div class="flex items-center justify-between p-4 bg-purple-700 text-white">
             <i class="fas fa-bars"></i>
-            <h1 class="text-xl font-bold">FNBC</h1>
+            <h1 class="text-xl font-bold">Ebanking pak luri suram </h1>
             <i class="fas fa-bell"></i>
         </div>
         
         <!-- Account Info -->
         <div class="p-4 bg-purple-700 text-white">
-            <div class="text-sm">BASIC CURRENT ACCOUNT</div>
-            <div class="text-2xl font-bold">₹ 8,92,135.66 <i class="fas fa-eye"></i></div>
+            <div class="text-sm">SALDO SAAT INI </div>
+            <div class="text-2xl font-bold">Rp.8,92,135.66 <i class="fas fa-eye"></i></div>
             <div class="flex justify-between items-center mt-2">
-                <div>JOHN SMITH</div>
-                <div>8327642732 <i class="fas fa-copy"></i></div>
+                <div>IJAT SUKAJAT</div>
             </div>
         </div>
         
@@ -40,21 +39,20 @@
         <!-- Quick Access -->
         <div class="p-4">
             <div class="flex justify-between items-center mb-4">
-                <div class="text-lg font-bold">Quick Access</div>
-                <div class="text-purple-700">View All</div>
+                <div class="text-lg font-bold">Pilihan</div>
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-                <div class="flex flex-col items-center">
+                <a href="transfer.html" class="flex flex-col items-center">
                     <div class="bg-yellow-100 p-4 rounded-full">
                         <i class="fas fa-exchange-alt text-yellow-500"></i>
                     </div>
                     <div class="text-sm mt-2">Transfer</div>
-                </div>
+                </a>
                 <div class="flex flex-col items-center">
                     <div class="bg-yellow-100 p-4 rounded-full">
-                        <i class="fas fa-mobile-alt text-yellow-500"></i>
+                        <i class="fas fa-hand-holding-usd text-yellow-500"></i>
                     </div>
-                    <div class="text-sm mt-2">Airtime</div>
+                    <div class="text-sm mt-2">Top up</div>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="bg-yellow-100 p-4 rounded-full">
@@ -70,9 +68,9 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="bg-yellow-100 p-4 rounded-full">
-                        <i class="fas fa-hand-holding-usd text-yellow-500"></i>
+                        <i class="fas fa-mobile-alt text-yellow-500"></i>
                     </div>
-                    <div class="text-sm mt-2">Quick Loan</div>
+                    <div class="text-sm mt-2">Airtime</div>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="bg-yellow-100 p-4 rounded-full">
@@ -108,11 +106,11 @@
                             <i class="fas fa-arrow-down text-green-500"></i>
                         </div>
                         <div class="ml-4">
-                            <div class="text-sm font-bold">Received from John</div>
-                            <div class="text-xs text-gray-500">3:00 PM</div>
+                            <div class="text-sm font-bold">Diterima dari Agus</div>
+                            <div class="text-xs text-gray-500">Pukul : 15:00</div>
                         </div>
                     </div>
-                    <div class="text-green-500 font-bold">+3,982.5</div>
+                    <div class="text-green-500 font-bold">+Rp.2.000.000</div>
                 </div>
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
@@ -120,13 +118,39 @@
                             <i class="fas fa-arrow-up text-red-500"></i>
                         </div>
                         <div class="ml-4">
-                            <div class="text-sm font-bold">Transfer to Devid</div>
-                            <div class="text-xs text-gray-500">3:00 PM</div>
+                            <div class="text-sm font-bold">Transfer ke Jarwo</div>
+                            <div class="text-xs text-gray-500">Pukul : 22:00</div>
                         </div>
                     </div>
-                    <div class="text-red-500 font-bold">-135.3</div>
+                    <div class="text-red-500 font-bold">-Rp.700.000</div>
                 </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-2 rounded-full">
+                                <i class="fas fa-arrow-down text-green-500"></i>
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-bold">Diterima dari Agus</div>
+                                <div class="text-xs text-gray-500">Pukul : 15:00</div>
+                            </div>
+                        </div>
+                        <div class="text-green-500 font-bold">+Rp.2.000.000</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-2 rounded-full">
+                                <i class="fas fa-arrow-up text-red-500"></i>
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-bold">Transfer ke Jarwo</div>
+                                <div class="text-xs text-gray-500">Pukul : 22:00</div>
+                            </div>
+                        </div>
+                        <div class="text-red-500 font-bold">-Rp.700.000</div>
+                    </div>
             </div>
+            
         </div>
         
         <!-- Bottom Navigation -->
